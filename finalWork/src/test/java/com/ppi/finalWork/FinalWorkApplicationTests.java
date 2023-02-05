@@ -1,10 +1,10 @@
-package com.ppi.finalwork;
+package com.ppi.finalWork;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FinalworkApplicationTests {
+class FinalWorkApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.ppi.finalwork;
+package com.ppi.finalWork;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FinalworkApplication {
+public class FinalWorkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FinalworkApplication.class, args);
+		SpringApplication.run(FinalWorkApplication.class, args);
 	}
 
 }

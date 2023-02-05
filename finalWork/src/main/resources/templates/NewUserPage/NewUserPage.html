@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html
+        xmlns:th = "http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleNewUser.css">
+    <title>POST</title>
+</head>
+<body>
+    <section class  = 'area-login'>
+        <div class="login">
+            <div>
+                <img src="/frontend/img/post.png">        
+            </div> 
+            
+            <form method="POST">
+                <label for="name">Nome</label>
+                <input type="text" name="nome" autofocus> 
+                <label for="name">Sobrenome</label>
+                <input type="text" name="sobrenome"> <br>
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario"> <br>
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="example@gmail.com"> <br>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" maxlength="8" id="cep" placeholder="12345678"> <br>
+                <label for="logradouro">Logradouro</label>
+                <input type="text" name="logradouro" id="logradouro"> <br>
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro"> <br>
+                <label for="localidade">Localidade</label>
+                <input type="text" name="localidade" id="localidade" placeholder="Sua cidade"> <br>
+                <label for="uf">UF</label>
+                <input type="text" name="uf" id="uf"> <br>
+                <input type="submit" value="cadastrar" placeholder="nome de usuario" autofocus>
+            </form>
+        </div>
+        </div>
+    </section>
+    <script src="/frontend/NewUserScript.js"></script>
+</body>    
+</html>
