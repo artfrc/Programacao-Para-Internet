@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html
         xmlns:th = "http://thymeleaf.org"
-        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
         lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleNewUser.css">
+    <link rel="stylesheet" th:href="@{/css/styleNewUser.css}"/>
     <title>POST</title>
 </head>
 <body>
     <section class  = 'area-login'>
         <div class="login">
             <div>
-                <img src="/frontend/img/post.png">        
+                <img th:src="@{/img/post.png}">
             </div> 
-            
+
+            <th:block th:include="ValidationMsg"></th:block>
+
             <form method="POST">
                 <label for="name">Nome</label>
                 <input type="text" name="nome" autofocus> 
@@ -41,6 +42,6 @@
         </div>
         </div>
     </section>
-    <script src="/frontend/NewUserScript.js"></script>
+    <script th:src="@{/js/NewUserScript.js}"></script>
 </body>    
 </html>

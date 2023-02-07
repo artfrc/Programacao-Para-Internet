@@ -1,20 +1,23 @@
 package com.ppi.finalWork.models;
 
 import jakarta.persistence.*;
-
-import java.io.Serializable;
-
+import jakarta.validation.constraints.NotEmpty;
 @Entity
 public class Usuario {
+    @NotEmpty
     private String nome;
+    @NotEmpty
     private String sobrenome;
 
     @Id
     private String usuario;
+    @NotEmpty
     private String email;
-
+    @NotEmpty
     private String logradouro;
+    @NotEmpty
     private String bairro;
+    @NotEmpty
     private String localidade;
 
     public String getLogradouro() {
