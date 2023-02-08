@@ -14,29 +14,40 @@
         <div class="login">
             <div>
                 <img th:src="@{/img/post.png}">
-            </div> 
+            </div>
 
             <th:block th:include="ValidationMsg"></th:block>
 
             <form method="POST">
-                <label for="name">Nome</label>
-                <input type="text" name="nome" autofocus> 
-                <label for="name">Sobrenome</label>
+                <label>Nome</label>
+                <input type="text" name="nome" autofocus>
+                <label>Sobrenome</label>
+
                 <input type="text" name="sobrenome"> <br>
-                <label for="usuario">Usuário</label>
+                <label>Usuário</label>
                 <input type="text" name="usuario"> <br>
-                <label for="email">Email</label>
+
+                <label>Senha</label>
+                <input type="password" name="senha"> <br>
+
+                <label>Email</label>
                 <input type="text" name="email" placeholder="example@gmail.com"> <br>
+
                 <label for="cep">CEP</label>
                 <input type="text" name="cep" maxlength="8" id="cep" placeholder="12345678"> <br>
+
                 <label for="logradouro">Logradouro</label>
                 <input type="text" name="logradouro" id="logradouro"> <br>
+
                 <label for="bairro">Bairro</label>
                 <input type="text" name="bairro" id="bairro"> <br>
+
                 <label for="localidade">Localidade</label>
                 <input type="text" name="localidade" id="localidade" placeholder="Sua cidade"> <br>
+
                 <label for="uf">UF</label>
                 <input type="text" name="uf" id="uf"> <br>
+
                 <input type="submit" value="cadastrar" placeholder="nome de usuario" autofocus>
             </form>
         </div>

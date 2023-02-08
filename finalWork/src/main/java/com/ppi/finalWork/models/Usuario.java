@@ -1,6 +1,7 @@
 package com.ppi.finalWork.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 @Entity
 public class Usuario {
@@ -11,7 +12,18 @@ public class Usuario {
 
     @Id
     private String usuario;
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
     @NotEmpty
+    private String senha;
+    @Email
     private String email;
     @NotEmpty
     private String logradouro;
@@ -94,5 +106,22 @@ public class Usuario {
         this.cep = cep;
     }
 
+    @NotEmpty
     private String cep;
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", usuario='" + usuario + '\'' +
+                ", senha='" + senha + '\'' +
+                ", email='" + email + '\'' +
+                ", logradouro='" + logradouro + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", localidade='" + localidade + '\'' +
+                ", uf='" + uf + '\'' +
+                ", cep='" + cep + '\'' +
+                '}';
+    }
 }
